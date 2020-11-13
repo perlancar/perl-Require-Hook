@@ -52,3 +52,8 @@ C<Require::Hook> is just a namespace to put and share all your require hooks.
 =head1 SEE ALSO
 
 C<Require::Hook::*> modules.
+
+L<Require::HookChain> is another namespace for require hooks and also a way to
+use C<Require::Hook::*> modules.
+
+L<RHC> is a short alias for Require::HookChain for convenience in one-liners.
