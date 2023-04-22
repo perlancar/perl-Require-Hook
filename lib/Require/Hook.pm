@@ -1,3 +1,4 @@
+## no critic: TestingAndDebugging::RequireUseStrict
 package Require::Hook;
 
 # AUTHORITY
@@ -9,6 +10,8 @@ package Require::Hook;
 # ABSTRACT: Namespace for require() hooks
 
 =head1 DESCRIPTION
+
+B<NOTE:> Please see L<Require::HookChain> instead which largely supersedes this.
 
 As one already understands, Perl lets you put coderefs or objects in C<@INC> as
 "hooks". This lets you do all sorts of things when it comes to loading modules,
@@ -53,7 +56,5 @@ C<Require::Hook> is just a namespace to put and share all your require hooks.
 
 C<Require::Hook::*> modules.
 
-L<Require::HookChain> is another namespace for require hooks and also a way to
-use C<Require::Hook::*> modules.
-
-L<RHC> is a short alias for Require::HookChain for convenience in one-liners.
+L<Require::HookChain> is a newer framework that largely supersedes
+Require::Hook.
