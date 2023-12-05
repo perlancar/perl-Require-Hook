@@ -11,7 +11,8 @@ package Require::Hook;
 
 =head1 DESCRIPTION
 
-B<NOTE:> Please see L<Require::HookChain> instead which largely supersedes this.
+B<NOTE:> Please see L<Require::HookPlugin> instead which largely supersedes
+this.
 
 As one already understands, Perl lets you put coderefs or objects in C<@INC> as
 "hooks". This lets you do all sorts of things when it comes to loading modules,
